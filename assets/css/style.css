@@ -242,7 +242,7 @@ body::-webkit-scrollbar-thumb {
   height: 90px;
   color: #fff;
   padding-top: 1rem;
-  background-color:#FF1493;
+  /* background-color:#FF1493; */
 }
 
 #White_links .header_links {
@@ -360,6 +360,9 @@ form.example::after {
   background-size: cover;
   width: 100%;
   min-height: 795px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-header {
   padding-top: 10rem !important;
@@ -376,39 +379,32 @@ form.example::after {
   object-position: center;
   border-radius: 326px 343px 0px 0px;
 }
-.hero-header .left {
-  /* width: 50%; */
-}
 .hero-header .right {
   width: 50%;
 }
-.banner1 .head1 {
-  font-size: 5rem;
-}
-.hero-header .left p {
-  width: 60%;
-  color: var(--light-grey);
-  font-size: 1rem;
-  font-family: "Poppins-Light";
-}
-.contact-btn a {
-  text-decoration: none;
-}
-.contact-btn button {
-  color: #ffffff;
-  background: var(--maroon);
-  border: 0;
-  border-radius: 0;
-  font-family: "NewYork";
-  font-size: 1.1rem;
-  padding: 0.5rem 1.5rem;
-  width: 150px;
-  /* font-size: 0.9rem;
-  padding: 0.4rem 1.5rem; */
-}
-.home-banner .head1 {
+.banner1  h1{
+  color: #fff;
+  font-family: "PlayBall-Regular";
   font-size: 6rem;
 }
+.banner1  span{
+  color: #fff;
+  font-family: "Mont-Light";
+  font-size: 3rem;
+}
+.btn a{
+  background-color: #000;
+    color: #fff;
+    font-family: "Mont-Light";
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .btn a:hover{
+    background-color: #fff;
+    color: #000;
+  }
 /* bestSeller Css */
 /*  */
 
