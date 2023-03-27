@@ -129,3 +129,105 @@
     return false;
   });
 })(jQuery);
+// Swiper Slider
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop:true,
+	navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+	breakpoints: {
+	  // when window width is >= 320px
+	  768: {
+		slidesPerView: 2,
+		spaceBetween: 20
+	  },
+	  375: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  280: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  414: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  1920: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  },
+	  1600: {
+		slidesPerView: 3,
+		spaceBetween: 20
+  
+	  },
+	  1366: {
+		slidesPerView: 3,
+		spaceBetween: 10
+	  },
+	  1400: {
+		slidesPerView: 5,
+		spaceBetween: 20
+	  }
+	}
+  
+  });
+  // Swiper Slider
+var swiper = new Swiper(".mySwiper1", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop:true,
+	navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+	breakpoints: {
+	  // when window width is >= 320px
+	  768: {
+		slidesPerView: 2,
+		spaceBetween: 20
+	  },
+	  375: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  320: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  280: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  414: {
+		slidesPerView: 1,
+		spaceBetween: 20
+	  },
+	  1920: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  },
+	  1600: {
+		slidesPerView: 3,
+		spaceBetween: 20
+  
+	  },
+	  1366: {
+		slidesPerView: 3,
+		spaceBetween: 10
+	  },
+	  1400: {
+		slidesPerView: 3,
+		spaceBetween: 20
+	  }
+	}
+  
+  });

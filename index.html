@@ -18,6 +18,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Butter.css -->
   <link rel="stylesheet" href="./assets/css/butter.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
   <!-- Animate.css -->
   <link rel="stylesheet" href="./assets/css/animate.css">
   <!-- Bootstrap Stylesheet -->
@@ -37,16 +39,16 @@
           <div class="d-flex justify-content-between align-items-center">
             <div class="logo">
               <a href="./index.html">
-                <h1 class="m-0"></i>Logo</h1>
-                <!-- <img src="./assets/images/SVG/logo.svg" alt="img"> -->
+                <!-- <h1 class="m-0"></i>Logo</h1> -->
+                <img src="./assets/images/1x/whiteLogo.png" alt="img">
               </a>
             </div>
             <div class="link">
               <div class="d-flex justify-content-end">
                 <a href="./index.html" class="header_links active">Home</a>
-                <a href="./assets/pages/aboutus.html" class="header_links">About Us</a>
+                <a href="./assets/pages/about-us.html" class="header_links">About Us</a>
                 <a href="./assets/pages/shop.html" class="header_links">Shop</a>
-                <a href="./assets/pages/contactus.html" class="header_links">Contact Us</a>
+                <a href="./assets/pages/contact-us.html" class="header_links">Contact Us</a>
                 <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
                   <input type="text" placeholder="Search.." name="search2">
                   <button type="submit"><i class="fa fa-search"></i></button>
@@ -63,8 +65,8 @@
       <div id="main-content">
         <div id="title">
           <a href="./index.html">
-            <!-- <img src="./assets/images/SVG/logo.svg" alt=""> -->
-            <span class="m-0"></i>Logo</span>
+            <img src="./assets/images/1x/whiteLogo.png" alt="img">
+            <!-- <span class="m-0"></i>Logo</span> -->
           </a>
         </div>
       </div>
@@ -76,13 +78,13 @@
       <div id="box" class="">
         <div id="items">
           <div class="imglogo text-center"><a href="./index.html">
-              <!-- <img src="./assets/images/SVG/logo.svg" alt=""> -->
-              <span class="m-0"></i>Logo</span>
+            <img src="./assets/images/1x/whiteLogo.png" alt="img">
+              <!-- <span class="m-0"></i>Logo</span> -->
             </a></div>
           <div class="item"><a href="./index.html" class="header_links active">Home</a></div>
-          <div class="item"><a href="./assets/pages/aboutus.html" class="header_links">About Us</a></div>
+          <div class="item"><a href="./assets/pages/about-us.html" class="header_links">About Us</a></div>
           <div class="item"><a href="./assets/pages/shop.html" class="header_links">Shop</a></div>
-          <div class="item"><a href="./assets/pages/contactus.html" class="header_links">Contact Us</a></div>
+          <div class="item"><a href="./assets/pages/contact-us.html" class="header_links">Contact Us</a></div>
           <div class="item">
             <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
               <input type="text" placeholder="Search.." name="search2">
@@ -93,37 +95,864 @@
       </div>
     </header>
     <!--Header close--->
-
-
-
     <!-- Banner Start -->
     <section>
       <div class="banner1 home-banner">
         <div class="container">
           <div class="wrapper d-flex justify-content-between">
-            <di class="row">
+            <div class="row">
               <div class="col-lg-12">
                 <h1>Beauty Is</h1>
                 <span>Nothing Without</span>
                 <h1>lipstick</h1>
-                <button class="btn"><a href="">Shop Now</a></button>
+                <button class="btn"><a href="./assets/pages/shop.html">Shop Now</a></button>
               </div>
-            </di>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Banner Close -->
     <!-- Best seller sectio open -->
-    <section class="bestseller"></section>
-    <!-- Best seller sectio closed -->
+    <section class="bestseller">
+      <div class="container">
+        <div class="row">
+              <h3>Best Seller</h3>
+              <div class="col-lg-6 zIndex1">
+                <div class="csmTm">
+                  <div class="posDiv">
+                    <div class="d-flex posDivi justify-content-center align-items-center">
+                      <div class="posDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                      <div class="posDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="csmtminner">
+                    <img src="./assets/images/1x/lipstick.png" alt="">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div><h4>Products 01</h4>
+                    <form class="rating">
+                      <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>   
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                    </form></div>
+                    <div><span>$25.00</span></div>
+                </div>
+              </div>
+              <div class="col-lg-6 zIndex1">
+                <div class="csmTm2">
+                  <div class="posDiv">
+                    <div class="d-flex posDivi justify-content-center align-items-center">
+                      <div class="posDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                      <div class="posDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="csmtminner1">
+                    <img src="./assets/images/1x/brownLipstick.png" alt="">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div><h4>Products 01</h4>
+                    <form class="rating">
+                      <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>   
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                      <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                      </label>
+                    </form></div>
+                    <div><span>$25.00</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 secDiv1">
+                    <div class="lip1"> 
+                      <div class="posDiv1">
+                        <div class="d-flex posDivi1 justify-content-center align-items-center">
+                          <div class="posDiviInner1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                          <div class="posDiviInner1"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="lip1Inner">
+                          <img src="./assets/images/1x/lipstick1.png" alt="">
+                      </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div><h5>Products 01</h5>
+                      <form class="rating">
+                        <label>
+                          <input type="radio" name="stars" value="1" />
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="2" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="3" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>   
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="4" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="5" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                      </form></div>
+                      <div><p>$25.00</p></div>
+                  </div>
+                  </div>
+                  <div class="col-lg-6 secDiv">
+                    <div class="lip2">
+                      <div class="posDiv1">
+                        <div class="d-flex posDivi1 justify-content-center align-items-center">
+                          <div class="posDiviInner1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                          <div class="posDiviInner1"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="lip1Inner">
+                        <img src="./assets/images/1x/lipstick2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div><h5>Products 01</h5>
+                      <form class="rating">
+                        <label>
+                          <input type="radio" name="stars" value="1" />
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="2" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="3" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>   
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="4" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="5" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                      </form></div>
+                      <div><p>$25.00</p></div>
+                  </div>
+                </div>
+              </div>
+             
+        </div>
+      </div>
+    </section>
+    <!-- Best seller section closed -->
+    <!-- Skin Friendly Section Open  -->
+    <section class="friendlySec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <h4>Skin Friendly<br>
+              Lipsticks  For You</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit, sed diam nonummy nibh euismod </p>
+              <button class="btn"><a href="./assets/pages/shop.html" class="btn1">Shop Now</a></button>
+          </div>
+        </div>
+      </div>
 
+    </section>
+    <!-- Skin Friendly Section Closed  -->
+    <!-- Our shop Section open -->
+    <section class="ourShop">
+      <div class="container">
+        <div class="row">
+          <h3>Our Shop</h3>
+          <div class="mainlipStick">
+            <div class="lipStick1">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                  <img src="./assets/images/1x/lipstick1.png" alt="">
+              </div>
+              <div class="d-flex justify-content-between">
+                <div><h5>Products 01</h5>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>   
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                  </form></div>
+                  <div><span>$25.00</p></div>
+              </div>
+            </div>
+            <div class="lipStick2">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick2.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick3">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick1.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick4">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick2.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick5">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick1.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="mainlipStick mt-5">
+            <div class="lipStick1">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                  <img src="./assets/images/1x/lipstick1.png" alt="">
+              </div>
+              <div class="d-flex justify-content-between">
+                <div><h5>Products 01</h5>
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>   
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                  </form></div>
+                  <div><span>$25.00</p></div>
+              </div>
+            </div>
+            <div class="lipStick2">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick2.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick3">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick1.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick4">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick2.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            <div class="lipStick5">
+              <div class="iconDiv">
+                <div class="d-flex iconDivi justify-content-center align-items-center">
+                  <div class="iconDiviInner"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="iconDiviInner"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                </div>
+              </div>
+              <div class="lipStick1Inner"> 
+                <img src="./assets/images/1x/lipstick1.png" alt="">
+            </div>
+            <div class="d-flex justify-content-between">
+              <div><h5>Products 01</h5>
+                <form class="rating">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>   
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form></div>
+                <div><span>$25.00</p></div>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="text-center btnDiv"><button class="btn"><a href="./assets/pages/shop.html" class="btn3">Shop Now</a></button></div>
+      </div>
+    </section>
+    <!-- Our shop Section closed -->
+    <!-- Subscribe Section Open-->
+    <section class="subscribeSec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 zIndex">
+            <h4>Subscribe To<br>
+              Our Newsletter</h4>
+             <div>
+              <input type="email" placeholder="Email Address">
+             </div>
+              <button class="btn"><a href="javaScript:void(0)">Subscribe</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section Closed-->
+    <!-- instagram section open -->
+    <section class="instaSec">
+      <div class="container">
+          <h3 class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">Instagram Gallery</h3>
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="swiperDiv">
+                        <div class="swiperDivInner">
+                          <img src="./assets/images/1x/lipstick.png" alt="">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperDiv">
+                      <div class="swiperDivInner">
+                        <img src="./assets/images/1x/lipstick2.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperDiv">
+                      <div class="swiperDivInner">
+                        <img src="./assets/images/1x/lipstick1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperDiv">
+                      <div class="swiperDivInner">
+                        <img src="./assets/images/1x/brownLipstick.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiperDiv">
+                      <div class="swiperDivInner">
+                        <img src="./assets/images/1x/slide5.png"alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="position-absolute leftRightBnt">
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+      </div>
+  </section>
+    <!-- instagram section closed -->
+    <!-- footer Section open -->
+    <section class="footer">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-img">
+              <a href=".../../index.html"><img src="./assets/images/SVG/logo.svg" alt=""></a>
+          </div>
+          </div>
+          <div class="col-lg-2">
+            <p>Pages</p>
+            <ul class="p-0">
+              <li><a href=".../../index.html">Home</a></li>
+              <li><a href="./assets/pages/about-us.html">About us</a></li>
+              <li><a href="./assets/pages/services.html">Shop</a></li>
+              <li><a href="./assets/pages/contact-us.html">Contact Us</a></li>
+          </ul>
+          </div>
+          <div class="col-lg-2">
+            <p>Extras</p>
+            <ul class="p-0">
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Refund Policy</a></li>
+          </ul>
+          </div>
+          <div class="col-lg-2">
+            <p>Follow Us</p>
+            <div class="d-flex footer-icon">
+              <div class="footerIcondiv1">
+                <span><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
+            </div>
+              <div class="footerIcondiv">
+                  <span><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+              </div>
+              <div class="footerIcondiv2">
+                <span><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-3 footerCont">
+            <p>Contact Info</p>
+            <ul class="p-0">
+              <li class="footer-ancher"><i class="fa-solid fa-phone p"></i><a href="tel:4703884601">123-456-789-0</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:webapparel@gmail.com">abc@example.com</a></li>
+              <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/DKt5kZgULkunrP5MA">abc
+                      street NY city USA 123456</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <span class="for-theme-link pt-1">
+                        Copyright@BuyBestthemes2024
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-    <!-- Footer Start -->
-
-    <!-- Footer End -->
+    </section>
+    <!-- footer Section closed -->
 
   </div>
 
@@ -132,6 +961,8 @@
   <script src="./assets/js/jquery-3.6.3.min.js"></script>
   <!-- Bootstrap 5 -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swiper js -->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <!-- Wow.js-->
   <script src="./assets/js/wow.min.js"></script>
   <!-- Custom Javascript -->
