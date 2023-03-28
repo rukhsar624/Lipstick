@@ -36,7 +36,7 @@
         "2px solid pink"
       );
       $(".hamburger div").css(
-        "background", "#8b0129"
+        "background", "red"
       );
       $(".hamburger.active div").css(
         "background", "#00000"
@@ -86,23 +86,23 @@
   // });
 
   // Scroll to div on next page
-  $(document).ready(function () {
-    $("html, body").hide();
+  // $(document).ready(function () {
+  //   $("html, body").hide();
 
-    if (window.location.hash) {
-      setTimeout(function () {
-        $("html, body").scrollTop(0).show();
-        $("html, body").animate(
-          {
-            scrollTop: $(window.location.hash).offset().top,
-          },
-          1000
-        );
-      }, 0);
-    } else {
-      $("html, body").show();
-    }
-  });
+  //   if (window.location.hash) {
+  //     setTimeout(function () {
+  //       $("html, body").scrollTop(0).show();
+  //       $("html, body").animate(
+  //         {
+  //           scrollTop: $(window.location.hash).offset().top,
+  //         },
+  //         1000
+  //       );
+  //     }, 0);
+  //   } else {
+  //     $("html, body").show();
+  //   }
+  // });
 
   // Click Scroll to Top Function
   $(".scroll").on("click", function (event) {
@@ -253,8 +253,6 @@ $("#minus-btn").on("click", () => {
 
   $("#count").val(countNum);
 });
-
-
 $("#plus-btn").on("click", () => {
   countNum += 1;
   $("#count").val(countNum);
@@ -273,8 +271,6 @@ $("#minus-btn1").on("click", () => {
 
   $("#count1").val(countNum);
 });
-
-
 $("#plus-btn1").on("click", () => {
   countNum += 1;
   $("#count1").val(countNum);
