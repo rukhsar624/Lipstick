@@ -1491,7 +1491,8 @@ span {
 }
 
 .prodDetails .tab_img {
-  width: 100%;
+  /* width: 100%; */
+  width: 500px;
   height: 500px;
   /* display: flex;
   justify-content: center;
@@ -1499,7 +1500,7 @@ span {
 }
 
 .select-image {
-  width: 390px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1723,6 +1724,8 @@ span {
   min-height: 500px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainDivProd1 .div {
@@ -2294,6 +2297,9 @@ table tr td i {
     background-color: #000;
     min-height: 40vh;
   }
+  .prodDetails {
+    min-height: 60vh;
+}
 }
 
 /* ===================  Max Media Queries ======================== */
@@ -2741,6 +2747,15 @@ table tr td i {
   }
   .mainDivProd {
     min-height: 860vh;
+}
+.prodDetails .tab_img{
+  width: 100%;
+}
+.select-image{
+  width: 100%;
+}
+.wrap{
+  flex-wrap: wrap;
 }
 }
 
