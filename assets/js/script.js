@@ -105,37 +105,37 @@
   // });
 
   // Click Scroll to Top Function
-  $(".scroll").on("click", function (event) {
-    event.preventDefault();
-    $("html,body").animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      1000
-    );
-  });
+  // $(".scroll").on("click", function (event) {
+  //   event.preventDefault();
+  //   $("html,body").animate(
+  //     {
+  //       scrollTop: $(this.hash).offset().top,
+  //     },
+  //     1000
+  //   );
+  // });
 
-  $("body").append(
-    "<a href='#' class='back-top'><i class='fa fa-angle-up'></i></a>"
-  );
-  var amountScrolled = 700;
-  var backBtn = $("a.back-top");
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > amountScrolled) {
-      backBtn.addClass("back-top-visible");
-    } else {
-      backBtn.removeClass("back-top-visible");
-    }
-  });
-  backBtn.on("click", function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      700
-    );
-    return false;
-  });
+  // $("body").append(
+  //   "<a href='#' class='back-top'><i class='fa fa-angle-up'></i></a>"
+  // );
+  // var amountScrolled = 700;
+  // var backBtn = $("a.back-top");
+  // $(window).on("scroll", function () {
+  //   if ($(window).scrollTop() > amountScrolled) {
+  //     backBtn.addClass("back-top-visible");
+  //   } else {
+  //     backBtn.removeClass("back-top-visible");
+  //   }
+  // });
+  // backBtn.on("click", function () {
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0,
+  //     },
+  //     700
+  //   );
+  //   return false;
+  // });
 })(jQuery);
 // Swiper Slider
 var swiper = new Swiper(".mySwiper", {
@@ -149,7 +149,7 @@ var swiper = new Swiper(".mySwiper", {
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
-		slidesPerView: 2,
+		slidesPerView: 3,
 		spaceBetween: 20
 	  },
 	  375: {
@@ -165,7 +165,7 @@ var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 20
 	  },
 	  414: {
-		slidesPerView: 1,
+		slidesPerView: 2,
 		spaceBetween: 20
 	  },
 	  1920: {
@@ -184,7 +184,19 @@ var swiper = new Swiper(".mySwiper", {
 	  1400: {
 		slidesPerView: 5,
 		spaceBetween: 20
-	  }
+	  },
+    1366: {
+      slidesPerView: 5,
+      spaceBetween: 20
+      },
+      2560: {
+        slidesPerView: 5,
+        spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20
+          }
 	}
   
   });
@@ -200,7 +212,7 @@ var swiper = new Swiper(".mySwiper1", {
 	breakpoints: {
 	  // when window width is >= 320px
 	  768: {
-		slidesPerView: 2,
+		slidesPerView: 3,
 		spaceBetween: 20
 	  },
 	  375: {
@@ -235,7 +247,8 @@ var swiper = new Swiper(".mySwiper1", {
 	  1400: {
 		slidesPerView: 3,
 		spaceBetween: 20
-	  }
+	  },
+    
 	}
   
   });
@@ -311,13 +324,14 @@ $("#plus-btn3").on("click", () => {
   countNum += 1;
   $("#count3").val(countNum);
 });
-// smooth scroll
-// butter.init({
-//   wrapperId: 'butter'
-// });
-// butter.init({
-//   cancelOnTouch: true
-// });
-// butter.init({
-//   wrapperDamper: 0.06
-// });
+// eye 
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});

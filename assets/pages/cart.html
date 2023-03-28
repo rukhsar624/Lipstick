@@ -50,10 +50,11 @@
                                     <input type="text" placeholder="Search.." name="search2">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
-                                <a href="../pages/contactus.html" class="header_links"><i
+                                <a href="../pages/cart.html" class="header_links"><i
                                         class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="../pages/contactus.html" class="header_links"><i
+                                <a href="../pages/wish-list.html" class="header_links"><i
                                         class="fa-regular fa-heart"></i></a>
+                                        <a href="../pages/sign-up.html"><i class="fa-solid fa-user"></i></a>
 
                             </div>
                         </div>
@@ -90,11 +91,123 @@
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
-                    <div class="item"><a href="../pages/shop.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-                    <div class="item"><a href="../pages/shop.html"><i class="fa-regular fa-heart"></i></a></div>
+                    <div class="item"><a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+                    <div class="item"><a href="../pages/wish-list.html"><i class="fa-regular fa-heart"></i></a></div>
+                    <div class="item"><a href="../pages/sign-up.html"><i class="fa-solid fa-user"></i></a></div>
                 </div>
             </div>
         </header>
+        <!-- shopping cart banner open -->
+        <section class="privacyBanner1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 zIndex1 text-center">
+                        <h3 class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">Shopping Cart</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shopping cart banner closed -->
+        <!-- shopping cart section open -->
+        <section class="shoppingcart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="table-responsive-sm">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                        <th>Description</th>
+                                        <th>Size</th>
+                                        <th>Quantity</th>
+                                        <th>Remove</th>
+                                        <th>Price</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                        <td><img src="../images/1x/slide5.png" alt="" height=80 width=80 /></td>
+                                        <td>
+                                            <p>Products 01</p>
+                                            <p>Products Code MKL10</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                <div class="d-flex pad1">
+                                                    <div class="squar"><i class="fa-solid fa-dollar-sign"></i></div>
+                                                    <div class="inpBox squar1">
+                                                    <div><button class="min" id="minus-btn1">-</button>
+                                                        <input type="text" placeholder="1" id="count1">
+                                                        <button class="plus" id="plus-btn1">+</button></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td><span><div class="squar"><i class="fa-solid fa-xmark"></i></div></span></td>
+                                        <td>
+                                            <span>$25.00</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                        <td><img src="../images/1x/slide5.png" alt="" height=80 width=80 /></td>
+                                        <td>
+                                            <p>Products 01</p>
+                                            <p>Products Code MKL10</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                <div class="d-flex pad1">
+                                                    <div class="squar"><i class="fa-solid fa-dollar-sign"></i></div>
+                                                    <div class="inpBox">
+                                                    <div><button class="min" id="minus-btn1">-</button>
+                                                        <input type="text" placeholder="1" id="count1">
+                                                        <button class="plus" id="plus-btn1">+</button></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </td>
+                                        <td><span><div class="squar"><i class="fa-solid fa-xmark"></i></div></span></td>
+                                        <td>
+                                            <span>$25.00</span>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <div class="squarDiv"><p>Discount<strong>$20.00</strong></p></div>
+                                <div class="squarDiv"><p>Discount<strong>$20.00</strong></p></div>
+                                <div class="squarDiv"><p>Discount<strong>$20.00</strong></p></div>
+                                <div class="squarDiv"><p>Discount<strong>$20.00</strong></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="summary zIndex1">
+                            <h3 class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">Summary</h3>  
+                            <div class="d-flex justify-content-between mt-4">
+                                <div><h6 class="wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">Subtotal</h6></div>
+                                <div><span class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">$25.00</span></div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-4">
+                                <div><h6 class="wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">Shopping EST</h6></div>
+                                <div><span class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">$550.00</span></div>
+                            </div> 
+                            <div class="mt-5">
+                                <input type="number" placeholder="Enter Gift Code">
+                            </div>   
+                            <div class="mt-5 text-center">
+                                <a href=""><button type="button" class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">Proceed To Checkout</button></a>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shopping cart section closed -->
+
         <!--Header close--->
         <!-- footer Section open -->
         <section class="footer">
