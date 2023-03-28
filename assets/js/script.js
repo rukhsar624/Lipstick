@@ -13,29 +13,37 @@
       $(".destop-nav-bar .logo h1").css("color", "#ffffff");
       $(".destop-nav-bar .header_links.active").css(
         "border-bottom",
-        "2px solid #ffffff"
+        "2px solid pink"
       );
       $(".hamburger div").css(
-        "background", "#ffffff"
+        "background", "#000"
       );
       $(".hamburger.active div").css(
-        "background", "#00000"
+        "background", "#8b0129"
       );
+      $(".destop-nav-bar .fa-solid " ).css("color" ,"#000");
+      $(".destop-nav-bar .fa-regular " ).css("color" ,"#000");
+      $(".destop-nav-bar .example" ).css("border" ,"2px solid #000");
+      $(".destop-nav-bar .example" ).css("border-radius" ,"10px");
+
     } else {
-      $("#navbar-fixed-top").css("background", "#FF1493");
+      $("#navbar-fixed-top").css("background", "none");
       $("#navbar-fixed-top").css("box-shadow", "none");
-      $(".destop-nav-bar .header_links").css("color", "#ffffff");
+      $(".destop-nav-bar .header_links").css("color", "#fff");
       $(".destop-nav-bar .logo h1").css("color", "#1a1a1a");
       $(".destop-nav-bar .header_links.active").css(
         "border-bottom",
-        "2px solid #8b0129"
+        "2px solid pink"
       );
       $(".hamburger div").css(
-        "background", "#000000"
+        "background", "#8b0129"
       );
       $(".hamburger.active div").css(
         "background", "#00000"
       );
+      $(".destop-nav-bar .fa-solid " ).css("color" ,"#fff");
+      $(".destop-nav-bar .fa-regular " ).css("color" ,"#fff");
+      $(".destop-nav-bar .example" ).css("border" ,"none");
     }
   });
   // MOBILE SCREEN SIDE NAV
@@ -231,3 +239,89 @@ var swiper = new Swiper(".mySwiper1", {
 	}
   
   });
+  // Counter
+  let count = document.getElementById("count");
+let countNum = 1;
+$("#count").val(countNum);
+$("#minus-btn").on("click", () => {
+  if (countNum <= 1) {
+    return false
+}
+  else {
+    countNum -= 1;
+  }
+
+  $("#count").val(countNum);
+});
+
+
+$("#plus-btn").on("click", () => {
+  countNum += 1;
+  $("#count").val(countNum);
+});
+// 
+let count1 = document.getElementById("count1");
+let countNum1 = 1;
+$("#count1").val(countNum);
+$("#minus-btn1").on("click", () => {
+  if (countNum <= 1) {
+    return false
+}
+  else {
+    countNum -= 1;
+  }
+
+  $("#count1").val(countNum);
+});
+
+
+$("#plus-btn1").on("click", () => {
+  countNum += 1;
+  $("#count1").val(countNum);
+});
+// 
+let count2 = document.getElementById("count2");
+let countNum2 = 1;
+$("#count2").val(countNum);
+$("#minus-btn2").on("click", () => {
+  if (countNum <= 1) {
+    return false
+}
+  else {
+    countNum -= 1;
+  }
+
+  $("#count2").val(countNum);
+});
+$("#plus-btn2").on("click", () => {
+  countNum += 1;
+  $("#count2").val(countNum);
+});
+// 
+let count3 = document.getElementById("count3");
+let countNum3 = 1;
+$("#count3").val(countNum);
+$("#minus-btn3").on("click", () => {
+  if (countNum <= 1) {
+    return false
+}
+  else {
+    countNum -= 1;
+  }
+
+  $("#count3").val(countNum);
+});
+$("#plus-btn3").on("click", () => {
+  countNum += 1;
+  $("#count3").val(countNum);
+});
+// smooth scroll
+// butter.init({
+//   wrapperId: 'butter'
+// });
+// butter.init({
+//   cancelOnTouch: true
+// });
+// butter.init({
+//   wrapperDamper: 0.06
+// });
