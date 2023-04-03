@@ -2748,6 +2748,15 @@ table tr td i {
     border-radius: 10px;
   }
 }
+.aboutOurstory .aboutImg {
+  width: 100%;
+  min-height: 500px;
+}
+
+.aboutOurstory .aboutImgDiv {
+  width: 100%;
+  height: 500px;
+}
 
 @media only screen and (max-width:768px) {
   .select-image {
@@ -2794,13 +2803,13 @@ table tr td i {
   }
 
   .aboutOurstory .swiperDiv {
-    width: 225px;
+    width: 100%;
     height: 250px;
     position: relative;
   }
 
   .aboutOurstory .swiperDivInner {
-    width: 220px;
+    width: 100%;
     height: 250px;
     border-radius: 10px;
   }
@@ -2819,6 +2828,15 @@ table tr td i {
     width: 200px;
     height: 250px;
     border-radius: 10px;
+  }
+  .aboutOurstory .aboutImg {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .aboutOurstory .aboutImgDiv {
+    width: 100%;
+    height: 500px;
   }
 }
 
