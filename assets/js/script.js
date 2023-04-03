@@ -153,7 +153,7 @@ var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 20
 	  },
 	  375: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 20
 	  },
 	  320: {
@@ -165,15 +165,15 @@ var swiper = new Swiper(".mySwiper", {
 		spaceBetween: 20
 	  },
 	  414: {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 20
 	  },
 	  1920: {
-		slidesPerView: 3,
+		slidesPerView: 5,
 		spaceBetween: 20
 	  },
 	  1600: {
-		slidesPerView: 3,
+		slidesPerView: 5,
 		spaceBetween: 20
   
 	  },
@@ -194,7 +194,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20
           }
 	}
